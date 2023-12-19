@@ -1,0 +1,37 @@
+version: '2'
+
+services:
+  web:
+    image: httpd:lastest
+    restart: always
+    volumes:
+      - .:/app
+      - ./provisioning/etc/apache/sites-enabled/vhost.conf:/etc/apache/sites-enabled/
+      - ./provisioning/var/www/html/index.htm:/var/www/html/
+    depends_on:
+      - mysql
+    ports:
+      - 8006:80
+
+  mysql:
+    image: mariadb:latest
+    restart: always
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=dbrootpass
+      - MYSQL_DATABASE=mydb
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=dbpass
+    ports:
+      - 33006:3306 
+    networks:
+      - mired_shared
+
+volumes:
+  dbdata:
+
+networks:
+  mired_shared:
+    external: true
+  

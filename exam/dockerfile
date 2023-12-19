@@ -1,0 +1,7 @@
+FROM php:8.0-apache
+RUN apt update 
+WORKDIR /code
+WORKDIR /root/examen
+EXPOSE 4443:443 8080:80
+ADD ./examen.zip /root/examen
+CMD ["/bin/bash"]

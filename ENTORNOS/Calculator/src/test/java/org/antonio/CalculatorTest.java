@@ -40,4 +40,10 @@ public class CalculatorTest {
         Calculator ej = new Calculator();
         assertEquals(0, ej.divide(0, 2), 0.0);
     }
+
+    @Test
+    public void si() {
+        Calculator ej = new Calculator();
+        assertEquals(5, ej.add(1, ej.subtract(4, 8)));
+    }
 }

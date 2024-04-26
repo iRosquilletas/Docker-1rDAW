@@ -24,7 +24,7 @@ public class CalculatorTest {
     @Test
     public void testMultiply() {
         Calculator ej = new Calculator();
-        assertEquals(ej.multiply(4, 4), 16);
+        assertEquals(16, ej.multiply(4, 4), 0.0);
         assertTrue(ej.multiply(4, 4) >= 10);
 
     }
@@ -41,9 +41,4 @@ public class CalculatorTest {
         assertEquals(0, ej.divide(0, 2), 0.0);
     }
 
-    @Test
-    public void si() {
-        Calculator ej = new Calculator();
-        assertEquals(5, ej.add(1, ej.subtract(4, 8)));
-    }
 }

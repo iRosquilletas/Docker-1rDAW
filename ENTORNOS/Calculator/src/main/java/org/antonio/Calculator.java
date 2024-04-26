@@ -10,15 +10,15 @@ public class Calculator {
         return a - b;
     }
 
-    public int multiply(int a, int b) {
+    public double multiply(double a, double b) {
         return a * b;
     }
 
-    public float divide(int a, int b) {
+    public double divide(double a, double b) {
         if (b == 0) {
             throw new IllegalArgumentException("No se puede dividir por cero");
         }
-        return (float) a / b;
+        return (double) a / b;
     }
 
 }

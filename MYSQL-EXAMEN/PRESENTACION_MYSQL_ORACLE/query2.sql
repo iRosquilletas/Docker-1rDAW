@@ -1,0 +1,1 @@
+select nombre, apellido from 1ro_de_daw

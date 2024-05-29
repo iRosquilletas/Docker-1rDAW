@@ -1,0 +1,4 @@
+USE videoclub;
+SELECT PELICULA.CodiPeli, PELICULA.Titol, GENERE.Descripcio AS Genero
+FROM PELICULA
+JOIN GENERE ON PELICULA.CodiGenere = GENERE.CodiGenere;

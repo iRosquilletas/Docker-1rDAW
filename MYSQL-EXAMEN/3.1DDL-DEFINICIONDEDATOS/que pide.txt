@@ -1,0 +1,14 @@
+Vamos a definir la estructura de datos para una aplicación de gestión de vuelos, que tendrá las tablas Vuelos, Pasajeros y Reservas.
+
+Siguiendo el ejemplo propuesto, documenta el proceso de definición de la estructura de datos, así como la inserción de algunos registros en la base de datos creada. Reflexiona sobre las restricciones (constraints) definidas, sobre las claves foráneas, así como sobre la estructura de datos en sí.
+
+Se espera tener respuesta a, al menos, las siguientes preguntas: ¿Por qué necesitamos tres tablas? ¿Cuáles son las claves primarias y foráneas? ¿Por qué utilizamos las restricciones que hemos definido y no otras?
+
+Reflexiona sobre las ventajas e inconvenientes de las restricciones definidas a la hora de cancelar un vuelo, de asignar un mismo asiento a dos pasajeros diferentes, o de asignar un pasajero a un vuelo inexistente. ¿Qué restricciones son útiles en cada caso? ¿Qué otras situaciones sería conveniente que manejara el SGBD para asegurar la integridad de los datos?
+
+Además, debemos documentar los siguientes comandos:
+
+Cómo explorar las bases de datos del SGBD
+Cómo explorar las tablas de una BD
+Cómo explorar los campos de una tabla y conocer los tipos de datos y las restricciones
+Cómo gestionar las transacciones (COMMIT, ROLLBACK y AUTOCOMMIT)
